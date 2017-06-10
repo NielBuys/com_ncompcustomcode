@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="NComp Custom Code">
+		<message>Display NComp Custom code Article</message>
+	</layout>
+	<fields 
+			name="request"
+			addfieldpath="/administrator/components/com_ncompcustomcode/models/fields"
+			>		
+		<fieldset name="request">			
+			<field					
+				   name="id"					
+				   type="ncompcustomcode"					
+				   label="Greeting"					
+				   description="Select Greeting"					
+				   />		
+		</fieldset>	
+	</fields>
+</metadata>
