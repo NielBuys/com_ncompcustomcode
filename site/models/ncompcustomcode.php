@@ -20,7 +20,9 @@ class ncompcustomcodeModelncompcustomcode extends JModelItem
 /**
 	 * @var array messages
 	 */
-	protected $messages;
+	protected $html;
+	protected $css;
+	protected $js;
  
 	/**
 	 * Method to get a table object, load it if necessary.
@@ -47,12 +49,12 @@ class ncompcustomcodeModelncompcustomcode extends JModelItem
 	 */
 	public function getMsg($id = 1)
 	{
-		if (!is_array($this->messages))
+		if (!is_array($this->html))
 		{
-			$this->messages = array();
+			$this->html = array();
 		}
  
-		if (!isset($this->messages[$id]))
+		if (!isset($this->html[$id]))
 		{
 			// Request the selected id
 			$jinput = JFactory::getApplication()->input;
@@ -65,10 +67,12 @@ class ncompcustomcodeModelncompcustomcode extends JModelItem
 			$table->load($id);
  
 			// Assign the message
-			$this->messages[$id] = $table->mainhtmldata;
+			$this->html['html'] = $table->mainhtmldata;
+			$this->html['css'] = $table->cssdata;
+			$this->html['js'] = $table->jsdata;
 		}
  
-		return $this->messages[$id];
+		return $this->html;
 	}
 
 }

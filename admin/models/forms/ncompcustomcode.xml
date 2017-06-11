@@ -6,12 +6,42 @@
 				type="hidden"
 				/>
 		<field
-				name="mainhtmldata"
+				name="description"
 				type="text"
-				label="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_CODE_LABEL"
-				description="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_CODE_DESC"
+				label="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_DESCRIPTION_LABEL"
+				description="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_DESCRIPTION_DESC"
 				size="40"
 				class="inputbox"
+				default=""
+				/>
+		<field
+				name="mainhtmldata"
+				type="editor"
+				label="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_CODE_LABEL"
+				description="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_CODE_DESC"
+			   	editor="codemirror"
+			    width="100%"
+			    filter="raw"
+				default=""
+				/>
+		<field
+				name="cssdata"
+				type="editor"
+				label="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_CSS_LABEL"
+				description="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_CSS_DESC"
+			   	editor="codemirror"
+			    width="100%"
+			    filter="raw"
+				default=""
+				/>
+		<field
+				name="jsdata"
+				type="editor"
+				label="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_JS_LABEL"
+				description="COM_NCOMPCUSTOMCODE_NCOMPCUSTOMCODE_JS_DESC"
+			   	editor="codemirror"
+			    width="100%"
+			    filter="raw"
 				default=""
 				/>
 	</fieldset>

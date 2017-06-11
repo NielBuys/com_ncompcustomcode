@@ -35,7 +35,7 @@ class JFormFieldncompcustomcode extends JFormFieldList
 	{
 		$db    = JFactory::getDBO();
 		$query = $db->getQuery(true);
-		$query->select('id,mainhtmldata');
+		$query->select('id,description');
 		$query->from('#__ncompcustomcode');
 		$db->setQuery((string) $query);
 		$messages = $db->loadObjectList();
@@ -45,7 +45,7 @@ class JFormFieldncompcustomcode extends JFormFieldList
 		{
 			foreach ($messages as $message)
 			{
-				$options[] = JHtml::_('select.option', $message->id, $message->mainhtmldata);
+				$options[] = JHtml::_('select.option', $message->id, $message->description);
 			}
 		}
  

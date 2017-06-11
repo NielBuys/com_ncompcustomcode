@@ -9,5 +9,9 @@
  
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
+
+$doc = JFactory::getDocument();
+$doc->addScriptDeclaration($this->msg['js']);
+$doc->addStyleDeclaration($this->msg['css']);
 ?>
-<h1><?php echo $this->msg; ?></h1>
+<div class="row-fluid">	<?php echo $this->msg['html']; ?></div>

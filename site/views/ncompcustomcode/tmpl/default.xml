@@ -11,8 +11,8 @@
 			<field					
 				   name="id"					
 				   type="ncompcustomcode"					
-				   label="Greeting"					
-				   description="Select Greeting"					
+				   label="Code"					
+				   description="Select Code"					
 				   />		
 		</fieldset>	
 	</fields>
