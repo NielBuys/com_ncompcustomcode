@@ -82,6 +82,7 @@ class ncompcustomcodeViewncompcustomcode extends JViewLegacy
 		}
  
 		JToolbarHelper::title($title, 'ncompcustomcode');
+		JToolbarHelper::save('ncompcustomcode.saveandreturn','Save');
 		JToolbarHelper::save('ncompcustomcode.save');
 		JToolbarHelper::cancel(
 			'ncompcustomcode.cancel',

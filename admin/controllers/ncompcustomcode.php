@@ -18,4 +18,9 @@ defined('_JEXEC') or die('Restricted access');
  */
 class ncompcustomcodeControllerncompcustomcode extends JControllerForm
 {
+	function saveandreturn(){
+ 		parent::save(); 
+		$id=JRequest::getVar('id');
+ 		$this->setredirect('index.php?option=com_ncompcustomcode&task=ncompcustomcode.edit&id=' . $id);
+}
 }
