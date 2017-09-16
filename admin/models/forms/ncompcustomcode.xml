@@ -23,6 +23,7 @@
 			    width="100%"
 			    filter="raw"
 				default=""
+			    buttons="true"
 				/>
 		<field
 				name="cssdata"
